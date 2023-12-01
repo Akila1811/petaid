@@ -29,6 +29,9 @@ html {
     background-position: center;
     background-size: cover;
     position: relative;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
 }
 
 @keyframes fadeIn {
@@ -90,7 +93,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #0051ff;
+    background: #008cff;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -209,7 +212,7 @@ nav .fa-solid{
     margin-top: 30px;
     border-top: 3px solid grey;
     border-radius: 10px;
-    box-shadow:  1px 1px 15px #888888;
+    box-shadow:  1px 5px 10px #888888;
 }
 
 h1{
@@ -219,19 +222,21 @@ h1{
 
 .upoznavanje h1{
     margin-top: 40px;
+    
 }
 
 .upoznavanje p{
     color: #000000;
     font-size: 18px;
-    font-weight: 300;
-    line-height: 22px;
+    font-weight: 50;
+    line-height: 30px;
     padding: 10px;
+    
     
 }
 
 .row{
-    margin-top:5%;
+    margin-top:3%;
     display: flex;
     justify-content: space-between;
     
@@ -255,6 +260,8 @@ h1{
 
 }
 
+/*Da se slike stave u kolonu responsive*/
+
 @media(max-width: 700px)
 {
     .row{
@@ -272,6 +279,7 @@ h1{
     margin: auto;
     padding-top: 60px;
     color: #ffffff;
+    
 }
 
 .usluge hr{
@@ -286,7 +294,8 @@ h1{
     width: 100%;
     height: 500px;
     background-color:#233f69;
-    
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 
@@ -340,8 +349,48 @@ h1{
     padding:40px;
     background-color: rgb(109, 109, 235);
     color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   
 }
+
+.hitne1
+{
+    text-align: center;
+    padding:40px;
+    background-color: rgb(109, 109, 235);
+    color: white;
+    border-radius: 30px;
+}
+
+.hitne2
+{
+    text-align: center;
+    padding:40px;
+    background-color: rgb(109, 109, 235);
+    color: white;
+    border-radius: 30px;
+}
+
+.hitne3
+{
+    text-align: center;
+    padding:40px;
+    background-color: rgb(109, 109, 235);
+    color: white;
+    border-radius: 30px;
+}
+
+
+.hitne4
+{
+    text-align: center;
+    padding:40px;
+    background-color: rgb(109, 109, 235);
+    color: white;
+    border-radius: 30px;
+}
+
 
 
 
@@ -366,15 +415,20 @@ h1{
 
 .col-00
 {
+    margin-top: -40px;
     margin-right: 200px;
     border-radius: 10px;
     border: 3px solid rgb(109, 109, 235);
+   
 }
+
 
 .col-00 img
 {
    
-    width: 30%;
+    width: 15vh;
+    height: auto;
+   
 }
 
 .col-00 p
@@ -385,7 +439,7 @@ h1{
 
 .col-2{
    margin-top: 40px;
-    flex-grow: 2;
+
 }
 
 
@@ -403,6 +457,12 @@ h1{
     text-decoration: none;
     color: #000000;
     margin-bottom: 10px;
+}
+
+.social a
+{
+    text-decoration: none;
+    color: #000000;
 }
 
 .col-2 form input{
@@ -426,6 +486,14 @@ h1{
     cursor: pointer;
 }
 
+.col-2 form button:hover
+{
+  background-color: #c9c5c5;
+  transition: 0.5s;
+}
+
+
+
 .social
 {
     
@@ -437,19 +505,30 @@ h1{
     font-size: 22px;
     margin: 10px;
     cursor: pointer;
+    
+
 }
+
+
 
 .copyright
 {
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color:#233f69;
     text-align:center;
     color: #fff;
     padding-top: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
     
 }
 
+.fa-sitemap
+{
+   padding-right: 10px;
+}
 
 /* Kraj css koda za prvu home page stranu */
 
@@ -478,6 +557,8 @@ h1{
     background-position: center;
     background-size: cover;
     position: relative;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 
@@ -509,6 +590,7 @@ h1{
  flex-direction: row;
  flex-wrap: wrap;
 
+
 }
 
 .box{
@@ -529,6 +611,7 @@ h1{
 .box p
 {
     font-weight: 400;
+    line-height: 30px;
 }
 
 .box1 img
@@ -559,6 +642,8 @@ h1{
     background-position: center;
     background-size: cover;
     position: relative;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .textbox3
@@ -688,6 +773,8 @@ h1{
     background-position: center;
     background-size: cover;
     position: relative;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 
@@ -840,8 +927,8 @@ h1{
 
    .submitdugme:hover
    {
-    background-color: #928e8e;
-   
+    background-color: #c9c5c5;
+    transition: 0.5s;
    }
 
   
@@ -862,6 +949,8 @@ h1{
         background-position: center;
         background-size: cover;
         position: relative;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
 
     .mid 
@@ -880,14 +969,14 @@ h1{
         border-radius: 50px;
        text-align: ce;
         padding: 15px;
-        border: 6px solid black;
+        border: 4px solid black;
       
     }
 
 
     .tekst
     {
-        border: 5px solid black;
+        border: 3px solid black;
         height: auto;
         background-color:#233f69 ;
         border-radius: 15px;

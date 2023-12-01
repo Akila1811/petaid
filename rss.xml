@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Pet Aid</title>
+  <link>https://akila1811.github.io/petaid/</link>
+  <description>Budite u toku sa najnovijim vestima.</description>
+  <item>
+    <title>Naše usluge </title>
+    <link>https://akila1811.github.io/petaid/usluge.html</link>
+    <description>Šta je novo dodato za naše usluge?</description>
+  </item>
+  <item>
+    <title>Galerija</title>
+    <link>https://akila1811.github.io/petaid/galerija.html</link>
+    <description>Koje su nove slike?</description>
+  </item>
+</channel>
+
+</rss>
