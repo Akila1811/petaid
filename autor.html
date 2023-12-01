@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Pet aid</title>
+</head>
+<body>
+    
+
+
+    
+    <section class="header5">
+
+        <nav>
+            <a href="index.html"><img src="img/logo1.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="textbox">
+
+            <h1>Autor</h1>
+            <p>O autoru ove stranice</p>
+            <a href ="#content5"><i class="fa-solid fa-arrow-down fa-xl"></i></a>
+
+        </div>
+
+        
+    </section>
+
+
+    <!---Mala js skripta za funkcionalnost dugmica na svim uredjajima-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu()
+        {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+<div id="content5"></div>
+        <section class="mid">
+
+            <div class="ja">
+
+                <img src="img/me.jpg" alt="autor photo"/>
+                
+            </div>
+        
+                <h1>Aleksa Krivokapić-143/23</h1>
+          
+                <div class="tekst">
+                <p>Zovem se Aleksa, trenutno pohadjam visoku ICT školu i prva sam godina osnovnih studija, takodje sam i član studentske organizacije. Završio sam srednju elektrotehničku školu za informacione tehnologije "ITHS". 
+                    Trenutno se najvise zanimam sa game-developmentom i web programiranjem. </p>
+                </div>
+        </section>
+
+   
+
+    
+    <!--Hitne Intervencije-->
+
+
+    <section class="hitne">
+
+        <h1>Hitne Intervencije 00-24h / 0649831133</h1>
+
+    </section>
+
+    <!--Footer-->
+
+    
+    <section class="footer">
+
+        <div class="col-00">
+
+            <img src="img/logo2.png" alt="logo">
+            <p>Veterinarska ambulanta "Pet Aid" je savremena veterinarska ordinacija za kućne ljubimce. <br/>Njen rad se bazira na brzoj dijagnostici i efikasnom lecenju.</p>
+
+        </div>
+
+
+             <div class="col-1">
+                <h3>Brzi linkovi</h3>
+                <a href="index.html">Početna</a>
+                <a href="autor.html">Autor</a>
+                <a href="usluge.html">Usluge</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="autor.html">Kontakt</a>
+             </div>
+
+
+
+        <div class="col-2">
+
+            <h3>Prijavite se na Newsletter.</h3>
+
+            <form>
+                <input class="input1" type="email" placeholder="Vaša email adresa" required>
+                <br/>
+                
+                <button type="submit">Pošalji</button>
+            </form>
+
+
+
+        </div>
+        <div class="col-3">
+            <h3>Kontakt</h3>
+            <p>Durmitorska 23, Beograd</p>
+            <br/>
+            <p>Tel:0649831133</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+           
+
+        </div>
+
+       
+
+    </section>
+
+    <div class="copyright">
+        
+            <p>CopyRight&copy;2023 Pet Aid</p>
+       
+    </div>
+
+
+
+</body>
+</html>

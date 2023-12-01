@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Pet Aid</title>
+</head>
+<body>
+
+    
+    <section class="header4">
+
+        <nav>
+            <a href="index.html"><img src="img/logo1.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="textbox">
+
+            <h1>Kontakt</h1>
+            <p></p>
+            <a href ="#content4"><i class="fa-solid fa-arrow-down fa-xl"></i></a>
+
+        </div>
+
+        
+    </section>
+
+
+    <!---Mala js skripta za funkcionalnost dugmica na svim uredjajima-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu()
+        {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+    <!--kontakt forma-->
+
+    <main>
+
+        <section class="kontakt">
+
+                <div  class="container">
+                    <div id="content4"></div>
+                    <h1>Kontaktirajte nas</h1>
+                    <p>Popunite formu kako bi se bolje upoznali i kako bi imali sto 
+                        bolje iskustvo.
+                    </p>
+
+                    
+                    <form>
+                        <div class="prvagrupa">
+                            <label for="ime">Ime:</label>
+                            <input type="text" name="ime" id="ime" class="form-element" placeholder="Vaše ime" required/>
+                        </div>
+                       
+                        <div class="prvagrupa">
+                            <label for="prezime">Prezime:</label>
+                            <input type="text" name="prezime" id="prezime"  class="form-element" placeholder="Vaše prezime" required/>
+                        </div>
+
+                        <div class="prvagrupa">
+                            <label for="email">E-mail adresa:</label>
+                            <input type="email" name="email" id="email"  class="form-element" placeholder="email" required/>
+                        </div>
+                        
+                        <div class="prvagrupa">
+                            <label for="number">Vaš broj telefona:</label>
+                            <input type="number" name="number" id="number"  class="form-element" placeholder="broj telefona" required/>
+                        </div>
+
+                        
+                        <div class="prvagrupa full">
+                            <label for="poruka">Vaša poruka:</label>
+                           <textarea name="poruka" id="poruka" class="form-element" placeholder="Vaša poruka" required></textarea>
+                        </div>
+
+                        <div class="submit">
+                            <input type="submit"  class="submitdugme" value="Pošalji"/>
+                        </div>
+
+                    </form>
+
+
+                  
+
+                    <h1>Naša adresa:</h1>
+
+            
+                </div>
+
+                <div class="googlemap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.000807767018!2d20.449822976850818!3d44.80117217743125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70015502ceed%3A0xc9293154d8b78331!2z0JTRg9GA0LzQuNGC0L7RgNGB0LrQsCwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1701371118003!5m2!1ssr!2srs" 
+                width="600" height="450" 
+                class="mapa"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+                
+        </section>
+
+  
+
+
+    </main>    
+
+     <!--Hitne Intervencije-->
+
+
+     <section class="hitne">
+
+        <h1>Hitne Intervencije 00-24h / 0649831133</h1>
+
+    </section>
+
+    <!--Footer-->
+
+    
+    <section class="footer">
+
+        <div class="col-00">
+
+            <img src="img/logo2.png" alt="logo">
+            <p>Veterinarska ambulanta "Pet Aid" je savremena veterinarska ordinacija za kućne ljubimce. <br/>Njen rad se bazira na brzoj dijagnostici i efikasnom lecenju.</p>
+
+        </div>
+
+
+             <div class="col-1">
+                <h3>Brzi linkovi</h3>
+                <a href="index.html">Početna</a>
+                <a href="autor.html">Autor</a>
+                <a href="usluge.html">Usluge</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="kontakt.html">Kontakt</a>
+             </div>
+
+
+
+        <div class="col-2">
+
+            <h3>Prijavite se na Newsletter.</h3>
+
+            <form>
+                <input type="email" placeholder="Vaša email adresa" required>
+                <br/>
+                
+                <button type="submit">Pošalji</button>
+            </form>
+
+
+
+        </div>
+        <div class="col-3">
+            <h3>Kontakt</h3>
+            <p>Durmitorska 23, Beograd</p>
+            <br/>
+            <p>Tel:0649831133</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+           
+
+        </div>
+
+       
+
+    </section>
+
+    <div class="copyright">
+        
+            <p>CopyRight&copy;2023 Pet Aid</p>
+       
+    </div>
+
+
+
+
+    
+
+    
+</body>
+</html>

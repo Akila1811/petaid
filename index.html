@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Pet Aid</title>
+</head>
+
+<body>
+
+    <section class="header">
+
+        <nav>
+            <a href="index.html"><img src="img/logo1.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="textbox">
+
+            <h1>Vaš ljubimac je na prvom mestu.</h1>
+            <p>Ko je čovekov najbolji prijatelj?</p>
+            <a href ="#content3"><i class="fa-solid fa-arrow-down fa-xl"></i></a>
+
+        </div>
+
+        
+    </section>
+
+
+    <!---Mala js skripta za funkcionalnost dugmica na svim uredjajima-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu()
+        {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <!--Upoznavanje-->
+
+    <div id="content3"> </div>
+
+    <section class="upoznavanje">
+
+        <h1>Veterinarska Ambulanta</h1>
+        <h3>Pet Aid / Durmitorska</h3>
+        <br/>
+        <p>Veterinarska ambulanta "Pet Aid" je savremena veterinarska ordinacija za kućne ljubimce. Njen rad se bazira na brzoj dijagnostici i efikasnom lecenju.<br/> Nakon dugogodišnjeg rada i u skladu sa razvojem veterinarske medicine u Svetu, <br/>razvila se i potreba za savremenijim pristupom u terapiji različitih oboljenja kod kućnih ljubimaca.</p>
+        <hr/>
+        <h1>Upoznajte nas tim!</h1>
+        <div class="row">
+            <div class="upoznavanjeslike">
+                    <img src="https://image.petmd.com/files/styles/978x550/public/2023-09/A%20golden%20retriever%20and%20their%20vet.jpg?w=1080&q=75"/>
+                    <p>Una<br>Diplomirala master studije na fakultetu Veterinarske medicine 2016. godine, i ima 5 godina radnog i prakticnog iskustva</p>
+            </div>
+
+            <div class="upoznavanjeslike">
+                    <img src="https://www.petassure.com/petassure/file-streams/page/pFiI1wJgl4UDMQyWW5y2zJ10%20Signs%20of%20a%20Great%20Veterinarian.jpg"/>
+                    <p>Una<br>Diplomirala master studije na fakultetu Veterinarske medicine 2016. godine, i ima 5 godina radnog i prakticnog iskustva</p>
+            </div>
+
+            <div class="upoznavanjeslike">
+               
+                <img src="https://www.lloydandcowan.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNCtEUXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e514c61499bc4f3beabf791efe9f91c70f4706dd/Untitled.png"/>
+                <p>Una<br>Diplomirala master studije na fakultetu Veterinarske medicine 2016. godine, i ima 5 godina radnog i prakticnog iskustva</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Usluge-->
+
+<section class="usluge">
+    
+
+  <div class="wrapper">
+        <h1>Veterinarske usluge</h1>
+        <hr/>
+
+        <div class="uslugeslike">
+            
+          
+            <ul class="slikeparent">
+
+
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/hitna.png" alt="hitne intervecije"/> 
+                    <p>Hitne intervecije</p></li></a>
+              
+           
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/ambulance.png" alt="hitne intervecije"/> 
+                    <p>Terenska sluzba</p></li></a> 
+
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/nurse.png" alt="hitne intervecije"/> 
+                    <p>Hirurgija</p></li></a> 
+
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/vakcina.png" alt="hitne intervecije"/> 
+                    <p>Vakcinacija</p></li></a>
+
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/lab.png" alt="hitne intervecije"/> 
+                    <p>Laboratorija</p></li> </a>
+
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/tooth.png" alt="hitne intervecije"/> 
+                    <p>Nega zuba</p></li></a> 
+
+
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/krpelj.png" alt="hitne intervecije"/> 
+                    <p>Preparati</p></li></a>
+    
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/stethoscope.png" alt="hitne intervecije"/> 
+                    <p>Kardiologija</p></li></a>
+
+                 <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/hrana.png" alt="hitne intervecije"/> 
+                    <p>Medicinska hrana</p></li></a>
+        
+                <a href="usluge.html"><li class="child1"><img src="https://www.myvet.rs/images/icons/ultrazvuk.png" alt="hitne intervecije"/> 
+                    <p>Ultra zvuk</p></li></a>
+                            
+                     
+
+                 <a href="usluge.html">  <li class="child1"><img src="https://www.myvet.rs/images/icons/rentgen.png" alt="hitne intervecije"/> 
+                     <p>Dijagnostika</p></li></a> 
+
+
+                <a href="usluge.html"> <li class="child1"><img src="https://www.myvet.rs/images/icons/endoskopija.png" alt="hitne intervecije"/> 
+                     <p>Endoskopija</p></li></a> 
+                
+              
+         
+            
+            </ul>
+
+        </div>
+    </div>
+
+</section>
+
+
+    <!--Hitne Intervencije-->
+
+
+    <section class="hitne">
+
+        <h1>Hitne Intervencije 00-24h / 0649831133</h1>
+
+    </section>
+
+    <!--Footer-->
+
+    
+    <section class="footer">
+
+        <div class="col-00">
+
+            <img src="img/logo2.png" alt="logo">
+            <p>Veterinarska ambulanta "Pet Aid" je savremena veterinarska ordinacija za kućne ljubimce. <br/>Njen rad se bazira na brzoj dijagnostici i efikasnom lecenju.</p>
+
+        </div>
+
+
+             <div class="col-1">
+                <h3>Brzi linkovi</h3>
+                <a href="index.html">Početna</a>
+                <a href="autor.html">Autor</a>
+                <a href="usluge.html">Usluge</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="kontakt.html">Kontakt</a>
+             </div>
+
+
+
+        <div class="col-2">
+
+            <h3>Prijavite se na Newsletter.</h3>
+
+            <form>
+                <input class="input1" type="email" placeholder="Vaša email adresa" required>
+                <br/>
+                
+                <button type="submit">Pošalji</button>
+            </form>
+
+
+
+        </div>
+        <div class="col-3">
+            <h3>Kontakt</h3>
+            <p>Durmitorska 23, Beograd</p>
+            <br/>
+            <p>Tel:0649831133</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+           
+
+        </div>
+
+       
+
+    </section>
+
+    <div class="copyright">
+        
+            <p>CopyRight&copy;2023 Pet Aid</p>
+       
+    </div>
+
+
+
+
+
+</body>
+
+
+
+</html>
