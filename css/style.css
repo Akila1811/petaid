@@ -60,9 +60,8 @@ nav img{
 
 
 .nav-links{
-    flex: 3;
     text-align: right;
-
+ 
 
 
 }
@@ -111,10 +110,7 @@ nav img{
 .textbox{
     width: 100%;
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
     text-align: center;
 }
 
@@ -141,59 +137,8 @@ nav img{
     font-size: 30px;
 }
 
-/* Da se ne prikazuju elementi za manje uredjaje (responsive) */
-
-nav .fa-solid{
-    display: none;
-
-}
 
 
-/* Media querry za uredjanje koji imaju maksimalnu sirinu piksela 700px (responsive) */
-
-@media(max-width:700px){
-    .textbox h1{
-    font-size: 30px;
-        }
-
-        .nav-links ul li{
-            display: block;
-        }
-
-        .nav-links{
-            position: absolute;
-            background: #36c8f4;
-            height: 100vh;
-            width: 200px;
-            top: 0;
-            right: -200px;
-            text-align: left;
-            z-index: 2;
-            transition:1s;
-        }
-
-        nav .fa-bars
-        {
-            display: block;
-            color: white;
-            
-        }
-
-
-        nav .fa-xmark{
-            display: block;
-            color:#fff;
-            margin: 10px;
-            font-size: 22px;
-            cursor: pointer;
-        }
-
-
-        .nav-links ul{
-            padding: 50px;
-        }
-
-}
 
 
 /*Upoznavanje*/
@@ -231,7 +176,7 @@ h1{
     font-weight: 50;
     line-height: 30px;
     padding: 10px;
-    
+
     
 }
 
@@ -260,14 +205,6 @@ h1{
 
 }
 
-/*Da se slike stave u kolonu responsive*/
-
-@media(max-width: 700px)
-{
-    .row{
-        flex-direction: column;
-    }
-}
 
 
 /*Usluge*/
@@ -651,9 +588,6 @@ h1{
     width: 100%;
     color: #fff;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     text-align: center;
 
 }
@@ -713,51 +647,6 @@ h1{
     transition: 0.5s;
 }
 
-.galerija .popup-img
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.9);
-    height: 100%;
-    width: 100%;
-    z-index:100;
-    display: none;
-}
-
-.galerija .popup-img span
-{
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 60px;
-    font-weight: bolder;
-    color: #fff;
-    cursor: pointer;
-}
-
-.galerija .popup-img img
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) ;
-    border: 5px solid #fff;
-    border-radius: 5px;
-    width: 750px;
-    height: 500px;
-    object-fit: cover;
-}
-
-
-@media (max-width:768px)
-{
-    .galerija .popup-img img
-    {
-        width: 95%;
-    }
-}
-
 
 /*Kraj koda za galeriju*/
 
@@ -787,11 +676,11 @@ h1{
 
     .container
     {
-        max-width: 1300px;
+        max-width: 1400px;
         margin: 0 auto;
         padding-left:30px;
         padding-right: 30px;
-        
+    
 
       
     }
@@ -811,13 +700,15 @@ h1{
     
     height: 100%;
     width: 80%;
-    left: 50px;
+    left: 80px;
     top: 0;
     position: absolute;
     border: 3px solid #233f69;
     border-radius: 8px;
     box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
 }
+
+
 
 .kontakt h1{
 
@@ -845,60 +736,23 @@ h1{
  margin-left:120px;
 }
 
-.container form 
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap:16px;
-    background-color: rgb(109, 109, 235)
-    ;
-    padding: 32px;
-    border-radius: 16px;
-    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
-    color: white;
-
-    @media (min-width:768px) {
-
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .prvagrupa label
-    {
-
-        display: block;
-        margin-bottom: 3px;
-        color: white;
-        font-size: 17px;
-        
-   
-
-
-    }
-
-    .prvagrupa
-    {
-        &.full
-        {
-           grid-column: 1/-1;
-        }
-    }
-    
- 
 
    .form-element
    {
     appearance: none;
     border: none;
     outline: none;
-
-    display: block;
     width: 100%;
 
     border-radius: 8px;
     padding:10px 14px;
-    background-color: #f3f3f3;
+    background-color: #5d7eb1;
 
    
+   }
+
+   ::placeholder{
+        color: rgb(37, 35, 35);
    }
 
    #poruka
@@ -909,9 +763,9 @@ h1{
 
    .submit
    {
-    grid-column: 1/-1;
+  
     text-align: center;
-    position: relative;
+ 
 
    }
 
@@ -934,7 +788,7 @@ h1{
   
 
    
-}
+
 
 
 /*Kraj koda za kontakt css*/
@@ -967,7 +821,7 @@ h1{
         height: auto;
         max-width: 400px;
         border-radius: 50px;
-       text-align: ce;
+       text-align: center;
         padding: 15px;
         border: 4px solid black;
       
@@ -991,18 +845,4 @@ h1{
    
    }
 
-
-   .fa-sitemap
-   {
-
-    color: #fff;
-
-   }
-
-   .fa-rss
-   {
-    color: #fff;
-    text-decoration: none;
-
-   }
  
